@@ -3,31 +3,25 @@
 #include <math.h>
 
 
-
-
 int main()
 {
-
-char unit;
-
-printf("\n Please enter unit of temperature: in (F) or (C)");
-scanf("%c", &unit);
-
-if (unit == 'c')
+   char input;
+   
+  
+while (1)
 {
-    printf("Celcius is selected. ");
+   printf("C/F \n");
+   scanf("%c",&input);
+   
+   if(input == 'C')
+   {
+     printf("Celcius \n");
+   }
+   else if (input == 'F')
+   {
+     printf("Farad \n");
+   }
 }
-else if(unit == 's')
-{
-    printf("Fahrendeit is selected. ");
-}
-else
-{
-    printf("Error");
-}
 
-
-
-return 0;
-
+    return 0;
 }

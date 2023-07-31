@@ -6,8 +6,7 @@
 int main()
 {
    char input;
-   
-  
+     
 while (1)
 {
    printf("C/F \n");

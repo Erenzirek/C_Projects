@@ -1,0 +1,20 @@
+
+        Searching & Sorting Algorithm
+       -- SEARCHING -- 
+        ~ Linear Search
+        ~ Binary Search
+        ~~ Recursive
+        ~~ Non-Recursive
+       -- SORTING -- 
+        ~ Bubble Search
+        ~ Selection Search
+        ~ Insertion Search
+        ~ Quick Search
+        ~ Merge Search
+        ~ Radix Search
+        ~ Heap Search
+        ~ Count Search
+   
+
+   
+
