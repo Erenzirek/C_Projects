@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"time.h": "c",
+			"string.h": "c",
+			"stdbool.h": "c",
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"initializer_list": "cpp"
+		}
+	}
+}

@@ -6,14 +6,14 @@
 #include "array.h"
 int main()
 {
-  double prices[] = {5.0, 7.0, 5.4, 8.6, 7.5};
+  int x = 6;
+  int y = 5;
+  int result;
 
-  for (int i = 0; i < 5; i++)
-  {
-      printf("%.2lf\n", prices[i]);
-  }
-    
- 
+  result = x + y;
+
+  printf("%d\n", result);
+
 
   return 0;
 }

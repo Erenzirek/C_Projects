@@ -1,74 +1,115 @@
 #include <iostream>
-#include <string>
-#include <vector>
+using namespace std;
+enum actions{
 
-class Customer {
-private:
-    std::string name;
-    std::string surname;
-    int accountNumber;
-public:
-    Customer(const std::string& n, const std::string& s, int accNum)
-        : name(n), surname(s), accountNumber(accNum) {}
-
-    // Get ve set iþlemleri burada tanýmlanabilir.
 };
 
-class Account {
-private:
-    int balance;
-public:
-    Account() : balance(0) {}
 
-    void deposit(int amount) {
-        // Para yatýrma iþlemi
+class Bank{
+private: 
+    string bankName;
+public: 
+// Bank constructor is created
+    Bank(string bankName){              
+        this -> bankName = bankName;
     }
-
-    void withdraw(int amount) {
-        // Para çekme iþlemi
+    void setBank(string bankName)
+    {
+        this -> bankName = bankName;
     }
-
-    int getBalance() const {
-        return balance;
+    string getBank()
+    {
+        return bankName;
     }
 };
 
-class Bank {
+class Employee{
+
+
+};
+
+class Account{
 private:
-    std::vector<Customer> customers;
-    std::vector<Account> accounts;
+    string name;
+    string surname;
+    int password;
 public:
-    void addCustomer(const std::string& name, const std::string& surname, int accNum) {
-        // Yeni müþteri eklemek için kullanýlacak iþlev
+    Account(string name, string surname, int password)
+    {
+        this -> name = name;
+        this -> surname = surname;
+        this -> password = password;
     }
 
-    void createAccount(int customerIndex) {
-        // Yeni hesap oluþturma iþlemi
+    void setAccount(string name, string surname, int password)
+    {
+        this -> name = name;
+        this -> surname = surname;
+        this -> password = password;
     }
 
-    void deposit(int accountIndex, int amount) {
-        // Belirli bir hesaba para yatýrma iþlemi
-    }
-
-    void withdraw(int accountIndex, int amount) {
-        // Belirli bir hesaptan para çekme iþlemi
-    }
-
-    void displayAccountDetails(int accountIndex) {
-        // Hesap bilgilerini görüntüleme iþlemi
-    }
-
-    void displayAllCustomers() {
-        // Tüm müþteri bilgilerini görüntüleme iþlemi
-    }
-
-    void displayAllAccounts() {
-        // Tüm hesap bilgilerini görüntüleme iþlemi
+    void getAccount()
+    {
+        cout << "Name is: "<< name << endl;
+        cout << "Surname is:" << surname << endl;
+        cout << "Password is:" << password << endl;
     }
 };
+
+class Process{
+
+};
+
+void menu(){
+    cout << "||---            Welcome to Bank Management System         --||" << endl;
+    cout << "||---            Please select the action to take          --||" << endl;
+    cout << endl;
+    cout << endl;
+    cout << "||---  1. Add Customer                    --||" << endl;
+    cout << "||---  2. Viewing Customer Information    --||" << endl;
+    cout << "||---  3. Updating Customer Information   --||" << endl;
+    cout << "||---  4. Customer Deletion               --||" << endl;
+    cout << "||---  5. Create An Account               --||" << endl;
+    cout << "||---  6. Account Closure                 --||" << endl;
+    cout << "||---  7. Viewing Account Information     --||" << endl;
+    cout << "||---  8. Deposit                         --||" << endl;
+    cout << "||---  9. Adding Staff                    --||" << endl;
+    cout << "||---  10. Viewing Account Information    --||" << endl;
+    cout << "||---  11. Viewing Staff Information      --||" << endl;
+    cout << "||---  12. Add Employee                   --||" << endl;
+    cout << "||---  13. View Employee Information      --||" << endl;
+    cout << "||---  14. Viewing Staff Information      --||" << endl;
+    cout << "||---  14. Remove Employee                --||" << endl;
+    cout << "||---  14. Exit                           --||" << endl;
+} 
 
 int main() {
-    // Ana program burada yer alacak.
-    // Kullanýcýdan giriþler alarak Banka Yönetim Sistemi iþlemleri gerçekleþtirilecek.
+    int action;
+    string bank;
+    string name;
+    string surname;
+    int password;
+
+    cout << "Please choose your bank: ";
+    cin >> bank;
+
+    Bank bank1(bank);
+
+    cout << "Bank Name is: " << bank1.getBank() << endl;
+    cout << "Welcome to " << bank << endl;
+    cout << endl;
+    cout << endl;
+
+    cout << "Please enter your name: ";
+    cin >> name;
+    cout << "Please enter your surname: ";
+    cin >> surname;
+    cout << "Please enter your password: ";
+    cin >> password;
+    Account account1(name, surname, password);
+    account1.getAccount();
+    cout << "Your account is created successfully" << endl;
+
+
     return 0;
 }

@@ -1,2 +1,1 @@
-
-        if (words[wordIndex][i] == c)
+p_Person

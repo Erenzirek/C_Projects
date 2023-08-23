@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdbool.h>
 #include <string.h>
-#include "array.h"
+
 int main()
 {
   double prices[] = {5.0, 7.0, 5.4, 8.6, 7.5};
